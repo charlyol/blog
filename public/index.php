@@ -1,12 +1,13 @@
 <?php
-echo 'Bienvenue sur le blog'
 
-$action = filter_input(INPUT_GET, 'action');
+include('config/database.php');
 
-if ($action == 'PageN°1') {
-    require '/lienPageN°1';
-} elseif ($action == '/pageN°2') {
-    require 'lienPageN°2';
-} else require 'ressources/views/errors/404.php';
+$action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_SPECIAL_CHARS);
+
+if ($action == 'homepage' || $action==NULL){
+    require '../app/controllers/homeController.php';
+} else {
+    require '../ressources/views/errors/404.php';
+}
 
 ?>
