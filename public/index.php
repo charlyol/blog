@@ -1,6 +1,6 @@
 <?php
 
-include('config/database.php');
+include('../config/database.php');
 
 $action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_SPECIAL_CHARS);
 
