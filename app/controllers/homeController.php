@@ -1,8 +1,6 @@
 <?php
 
-echo 'Hello world';
 require '../app/persistances/blogPostData.php';
 $listPosts = lastBlogPosts($dataBaseLink,10);
-var_dump($listPosts);
 
-?>
+require'../ressources/views/layouts/home.tpl.php';
