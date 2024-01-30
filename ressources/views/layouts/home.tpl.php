@@ -9,7 +9,9 @@ include('header.tpl.php');
 <section>
     <?php foreach ($listPosts as $article): ?>
         <article>
-                <h2><?= $article['title']; ?></h2>
+                <h2>
+                    <a href="/?action=blogPost&id=<?= $article['id']; ?>" style="text-decoration:none"><?= $article['title']; ?></a>
+                </h2>
                 <p><?= $article['body']; ?></p>
                 <p>Auteur : <?= $article['pseudo']; ?></p>
         </article>
@@ -22,3 +24,5 @@ include('header.tpl.php');
 <?php
 include('footer.tpl.php');
 ?>
+
+

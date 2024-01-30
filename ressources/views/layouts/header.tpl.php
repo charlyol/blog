@@ -17,10 +17,10 @@
 </section>
 <section class="nav">
     <nav>
-        <a href="">Home page</a>
+        <a href="/?action=home">Home page</a>
         <a href="">CV</a>
         <a href="">Hobby</a>
-        <a href="">Contact</a>
+        <a href="/?action=test">Contact</a>
     </nav>
 </section>
 </body>
