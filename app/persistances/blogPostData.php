@@ -9,7 +9,9 @@ function lastBlogPosts($PDO, $nbLastPosts)
     } catch (PDOException $e) {
         die("Erreur lors de l'exécution de la requête : " . $e->getMessage());
     }
-};
+}
+
+;
 
 function commentsByBlogPost($PDO, $id)
 {
@@ -21,7 +23,9 @@ function commentsByBlogPost($PDO, $id)
     } catch (PDOException $e) {
         die("Erreur lors de l'exécution de la requête : " . $e->getMessage());
     }
-};
+}
+
+;
 
 function blogPostByld($PDO, $id)
 {
@@ -33,7 +37,20 @@ function blogPostByld($PDO, $id)
     } catch (PDOException $e) {
         die("Erreur lors de l'exécution de la requête : " . $e->getMessage());
     }
-};
+}
+
+;
+
+function blogPostCreate()
+{
+    try {
+
+    } catch (PDOException $e) {
+        die("Erreur lors de l'exécution de la requête : " . $e->getMessage());
+    }
+}
+
+;
 
 
 
