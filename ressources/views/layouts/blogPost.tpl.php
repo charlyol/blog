@@ -1,5 +1,5 @@
 <?php
-$metaTitle='PostN°X';
+$metaTitle=("Article N°").$id;
 include('header.tpl.php');
 ?>
 
