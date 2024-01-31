@@ -103,10 +103,10 @@ function blogPostCreate($PDO, $formulaire, $authorId)
         die("Erreur lors de l'exécution de la requête : " . $e->getMessage());
     }
 };
-function getPostId($PDO, $titre)
+function getPostId($PDO, $title)
 {
     try {
-        $query = "select id from Posts where Posts.title = '"$titre"'";
+        $query = "select id from Posts where Posts.title = '$title'";
         $request = $PDO->query($query);
         $PostId = $request->fetchall(PDO::FETCH_ASSOC);
         return $PostId;

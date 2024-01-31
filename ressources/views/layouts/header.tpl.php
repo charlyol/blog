@@ -19,7 +19,7 @@
     <nav>
         <a href="/?action=home">Home page</a>
         <a href="">CV</a>
-        <a href="/?action=blogPostCreat">Creat Post</a>
+        <a href="/?action=blogPostCreate">Create Post</a>
         <a href="/?action=test">Contact</a>
     </nav>
 </section>
