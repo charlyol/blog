@@ -3,7 +3,6 @@ $metaTitle = "Create Post";
 include('header.tpl.php');
 ?>
 
-//Formulaire
 <form action="/?action=blogPostCreate" method="post">
     <fieldset>
         <legend>
@@ -47,16 +46,14 @@ include('header.tpl.php');
         <label for="date_start">Date de publication :</label>
         <input type="date" id="start" name="date_start" value="<?php echo date('Y-m-d'); ?>"
                min="<?php echo date('Y-m-d'); ?>" max="2666-05-19"/>
-        date0 = date1 + 30 jours
         <div class="champ">
             <textarea name="body" rows="10" cols="60" maxlength="200"
                       placeholder="Votre Post ici, de 200 char max"></textarea>
         </div>
-        <input type="submit" value="Envoyer">
     </fieldset>
+    <fieldset><input type="submit" value="Envoyer"></fieldset>
 </form>
 
 <?php
-var_dump($_POST);
 include('footer.tpl.php');
 ?>
