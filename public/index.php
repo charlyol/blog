@@ -4,7 +4,8 @@ include "../config/database.php";
 $routerArray = [
     "home",
     "blogPost",
-    "test"
+    "test",
+    "blogPostCreat"
 
 ];
 
