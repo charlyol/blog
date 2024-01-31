@@ -5,7 +5,7 @@ $routerArray = [
     "home",
     "blogPost",
     "test",
-    "blogPostCreat"
+    "blogPostCreate"
 
 ];
 

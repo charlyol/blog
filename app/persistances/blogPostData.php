@@ -33,7 +33,17 @@ function blogPostByld($PDO, $id)
     }
 };
 
-
+function findAllCategories($PDO)
+{
+    try {
+        $query = "select * from Categories";
+        $request = $PDO->query($query);
+        $allCategories = $request->fetchall(PDO::FETCH_ASSOC);
+        return $allCategories;
+    } catch (PDOException $e) {
+        die("Erreur lors de l'exécution de la requête : " . $e->getMessage());
+    }
+};
 
 
 
