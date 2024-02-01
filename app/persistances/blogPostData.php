@@ -119,7 +119,8 @@ function blogCategorieChoice($PDO, $lastPostId, $nbCategorie)
     try {
         $query = "insert into Post_Categories (Post_id, Categories_id) values (?, ?)";
         $request = $PDO->prepare($query);
-        $request->execute(array($lastPostId, $nbCategorie));
+        var_dump($lastPostId);
+        $request->execute(array($lastPostId["id"], $nbCategorie));
     } catch (PDOException $e) {
         die("Erreur lors de l'exécution de la requête : " . $e->getMessage());
     }

@@ -10,8 +10,7 @@ $titre=$formulaire['title'];
 $nbCategorie=$formulaire['nbCategorie'];
 testAuthorExist($dataBaseLink, $formulaire);
 blogPostCreate($dataBaseLink , $formulaire , authorIdByPseudo($dataBaseLink, $pseudo));
-getPostId($dataBaseLink, $titre);
-blogCategorieChoice($dataBaseLink, $lastPostId, $nbCategorie);
+blogCategorieChoice($dataBaseLink, getPostId($dataBaseLink, $titre) , $nbCategorie);
 }
 $selectCat = findAllCategories($dataBaseLink);
 require'../ressources/views/layouts/blogPostCreate.tpl.php';
