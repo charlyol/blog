@@ -1,6 +1,6 @@
 <?php
-$user = 'olinger';
-$pass = 'Cash2023*';
+$user = '*';
+$pass = '*';
 
 
 
